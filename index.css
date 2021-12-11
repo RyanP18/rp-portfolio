@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 52vh auto;
+  color: white;
+  overflow: auto;
+}
+
+.app-name {
+  pointer-events: none;
+  font-size: 15vw;
+  font-family: fantasy;
+  margin: auto;
+}
+
+.app-links {
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-link-icon {
+  height: 100px;
+  padding: 40px;
+  cursor: pointer;
+}
+
+.app-link-icon:hover {
+  height: 125px;
+}
+
+.app-link-icon-internal {
+  fill: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-name {
+    animation: name-font-size 4s linear;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .app-name {
+    animation: app-section-flyin 4s linear;
+  }
+  .app-links {
+    animation: app-section-flyin 4s linear;
+  }
+}
+
+@keyframes app-section-flyin {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(2);
+    animation-play-state: running;
+  }
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+    animation-play-state: paused;
+  }
+}
+
+@keyframes name-font-size {
+  from {
+    font-size: 20vh;
+  }
+  to {
+    font-size: 20vw;
+  }
+}
