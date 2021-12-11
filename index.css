@@ -55,6 +55,11 @@ code {
     animation: name-font-size 4s linear;
   }
 }
+@media screen and (min-width: 1200px) {
+  .app-name {
+    font-size: 175px;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .app-name {
     animation: app-section-flyin 4s linear;
