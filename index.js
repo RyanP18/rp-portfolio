@@ -1,8 +1,8 @@
 // TODO replace urls with Ryan's
 const urls = {
-  GitHub: "https://github.com/",
-  Twitter: "https://twitter.com/home",
-  Twitch: "https://www.twitch.tv/",
+  GitHub: "https://github.com/RyanP18/",
+  Twitter: "https://twitter.com/poppr23",
+  Twitch: "https://www.twitch/home.tv/",
   Mail: "myemail@gmail.com",
   Instagram: "https://www.instagram.com/ryanpopp18/",
 };
